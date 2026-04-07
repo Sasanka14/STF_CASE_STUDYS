@@ -1,1 +1,0 @@
-# MCQ Exam Kohooot Questions only

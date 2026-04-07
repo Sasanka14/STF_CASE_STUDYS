@@ -1,1 +1,0 @@
-The following C program is written for TCP socket communication between client and server. However, the code contains some bugs and may not work correctly. Identify the errors and rewrite the corrected version.
