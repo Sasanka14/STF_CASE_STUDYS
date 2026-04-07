@@ -1,0 +1,22 @@
+The "Loops(FlowControl)" folder is dedicated to helping learners understand the concept of loops in programming, particularly in Java.
+It includes explanations, examples, and exercises that cover various types of loops used to control the flow of a program. Key topics 
+include:
+
+1. **For Loop**:
+   - Used for iterating over a sequence of values or executing a block of code a specific number of times.
+   - Examples demonstrate common use cases like printing numbers and calculating sums.
+
+2. **While Loop**:
+   - Repeats a block of code as long as a specified condition is true.
+   - Exercises illustrate scenarios such as continuously prompting user input until a condition is met.
+
+3. **Do-While Loop**:
+   - Similar to the while loop but guarantees at least one execution of the code block before checking the condition.
+   - Practical examples show how to use this loop for tasks requiring at least one iteration.
+
+4. **Common Pitfalls**:
+   - Highlights typical mistakes such as infinite loops, off-by-one errors, and logical errors.
+   - Examples help learners recognize and avoid these pitfalls in their code.
+
+Through the contents of this folder, learners will gain a comprehensive understanding of loop constructs, enabling them to efficiently
+manage repetitive tasks and control program flow.

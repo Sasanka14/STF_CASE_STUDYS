@@ -1,0 +1,31 @@
+The folder "Arrays (Part II)" contains a continuation of advanced Java programs focusing on array operations and algorithms. Building 
+on the foundational knowledge from "Arrays (Part I)," this collection delves into more complex problems and solutions, providing 
+practical examples and implementations. Each program is designed to enhance understanding and proficiency in handling arrays through 
+various algorithms and techniques. Below is an overview of the key topics and their corresponding programs included in this folder:
+
+1. **Maximum Subarray Sum**:
+   - Implementation of Kadane's Algorithm to find the maximum sum of a contiguous subarray.
+   - Demonstrates a dynamic programming approach for efficient computation.
+
+2. **Trapping Rainwater**:
+   - Computes the amount of water that can be trapped after raining given an elevation map.
+   - Uses auxiliary arrays to track the maximum heights and calculate trapped water.
+
+3. **Stock Buy and Sell**:
+   - Finds the maximum profit from a single buy and sell transaction given stock prices over days.
+   - Optimized solution using linear time complexity.
+
+4. **Contains Duplicate**:
+   - Checks if any value appears at least twice in an array.
+   - Utilizes hash sets for efficient duplicate detection.
+
+5. **Rotated Sorted Array Search**:
+   - Searches for a target value in a rotated sorted array.
+   - Implements binary search with logarithmic time complexity.
+
+6. **Three Sum**:
+   - Finds all unique triplets in an array that sum to zero.
+   - Employs sorting and the two-pointer technique to avoid duplicates and ensure efficient computation.
+
+These programs collectively serve as a comprehensive resource for mastering advanced array operations and algorithms in Java. 
+Each example is well-documented and structured to provide clear insights into solving complex array-based problems.

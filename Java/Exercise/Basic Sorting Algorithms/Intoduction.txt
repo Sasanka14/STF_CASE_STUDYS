@@ -1,0 +1,23 @@
+The folder named "Basic Sorting Algorithms" contains various Java programs demonstrating the implementation of common sorting 
+techniques. The folder includes the following sorting algorithms:
+
+1. **Bubble Sort**: A simple comparison-based algorithm that repeatedly steps through the list, compares adjacent elements, and 
+                    swaps them if they are in the wrong order. The process is repeated until the list is sorted in descending order.
+
+2. **Selection Sort**: An algorithm that divides the input list into a sorted and an unsorted region. It repeatedly selects the 
+                       largest (for descending order) element from the unsorted region and swaps it with the first unsorted element,
+                       growing the sorted region.
+
+3. **Insertion Sort**: An algorithm that builds the final sorted array one item at a time. It picks the next element and inserts it 
+                       into the correct position within the already sorted portion of the list.
+
+4. **Counting Sort**: A non-comparison-based algorithm that sorts non-negative integers by counting the occurrences of each element 
+                      and then placing each element in its correct position in the output array based on the cumulative counts.
+
+5. **In-built Sort**: Utilizes Java's built-in sorting functionality, which sorts elements in ascending order by default. To achieve 
+                      descending order, the array is first converted to a list of integers, sorted using `Collections.reverseOrder()`,
+                      and then converted back to an array.
+
+The main program allows users to input an array of integers and choose which sorting algorithm to apply. If the user selects an 
+option outside the specified algorithms, the program defaults to using Java's in-built sort in descending order. The program 
+showcases the sorted array after applying the chosen sorting technique.
