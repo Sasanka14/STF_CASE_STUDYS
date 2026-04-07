@@ -1,0 +1,64 @@
+/* Global Styles */
+body {
+    background-color: #f2f4f8;
+    background-image: url("https://i.pinimg.com/1200x/64/17/44/6417441272c1010f489a46fc4770f641.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #444;
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: darkblue;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: darkblue;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #003366;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    color: #333;
+}
+
+footer {
+    text-align: right;
+}
+
+footer p {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}

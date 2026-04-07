@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="orderPizza()">Hello</button>
+    <button onclick="orderPizzas()">Hellos</button>
+    <button onclick="orderPizzasAsync()">Helloss</button>
+    <script>
+        function orderPizza(){
+            setTimeout(()=>{
+                console.log("Accepting.. ")
+            console.log("Accepted")
+            },5000)
+            setTimeout(()=>{
+                 console.log("Prepared")
+            console.log("ordered")
+            },10000)
+        }
+
+
+        function helpfun(){
+            return new Promise((res,rej)=>{
+                setTimeout(()=>{
+                    res("Cake Ready")
+                },5000)
+            })
+        }
+
+        function orderPizzas(){
+            
+            console.log("ordering Pizzas")
+            helpfun().then((mess)=>{
+                console.log(mess)
+            })
+        }
+
+        async function orderPizzasAsync(){
+            console.log("ordering Pizzas")
+            let message = await helpfun()
+            console.log(message)
+        } 
+    </script>
+
+</body>
+</html>

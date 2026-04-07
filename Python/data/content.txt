@@ -1,0 +1,52 @@
+We read every piece of feedback, and take your input very seriously.
+To see all available qualifiers, see ourdocumentation.
+Prevent this user from interacting with your repositories and sending you notifications.
+          Learn more aboutblocking users.
+You must be logged in to block users.
+Contact GitHub support about this user’s behavior.
+        Learn more aboutreporting abuse.
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+AgriNext is an AI-powered web application designed to help farmers identify crop diseases instantly through image analysis. Built with Python, TensorFlow, and Streamlit, this tool enables users to …
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+This repository contains various C programming projects, ranging from basic exercises to more complex applications. It's intended for learning and practicing C.
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+Config files for my GitHub profile.
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+This Web Development Course covers HTML, CSS , JavaScript, and Bootstrap, teaching students to create responsive, interactive websites. It includes practical projects, backend integration, and serv…
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+A Bank Management System in C is a simple console-based program that helps users manage bank accounts, perform transactions, and check balances using file handling. This system simulates real-world…
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+Water Quality Prediction - College Project 🌊💧 Predicts water potability (safe/unsafe) using ML models like XGBoost & Random Forest. Features data preprocessing, feature importance, model evaluation…
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+Explore Java fundamentals to advanced topics in the 'Java ' repository. Learn through structured paths, hands-on examples, and real-world projects. Engage with a vibrant community. Clone, contribut…
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+A Travel Website created using Bootstrap is designed to provide users with a visually appealing, responsive, and user-friendly platform to explore and book travel packages. Bootstrap's built-in com…
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.
+Encryption & Decryption: A Secure Communication System This project implements AES encryption to secure messages between a client and server using Python and PyCryptodome. It encrypts and decrypts …
+There was an error while loading.Please reload this page.
+There was an error while loading.Please reload this page.

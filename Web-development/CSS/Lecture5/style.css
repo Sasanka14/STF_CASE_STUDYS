@@ -1,0 +1,27 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.box{
+    width: 300px;
+    background-color: lightsalmon;
+}
+
+.box1{
+    padding: 20px;
+    border: 2px solid black;
+    margin: 15px;
+    background-color: lightgoldenrodyellow;
+}
+.box2{
+    padding: 30px;
+    border: 4px dashed black;
+    margin: 30px;
+    background-color: khaki;
+}
+.box3{
+    padding: 40px;
+    border: 8px dotted black;
+    margin: 20px 40px;
+    background-color: wheat;
+}

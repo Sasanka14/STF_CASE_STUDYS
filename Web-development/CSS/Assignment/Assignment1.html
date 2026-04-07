@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Box Model – Complete Practice Lab</title>
+
+    <style>
+      /* =====================================================
+           GLOBAL STYLES (DO NOT EDIT)
+           ===================================================== */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      p {
+        line-height: 1.6;
+      }
+
+      .section {
+        background-color: #ffffff;
+        padding: 20px;
+        margin-bottom: 40px;
+        border-radius: 8px;
+      }
+
+      /* =====================================================
+           COMMON BOX STYLE
+           ===================================================== */
+      .box {
+        width: 300px;
+        background-color: #e6e6e6;
+      }
+
+      img {
+        width: 100%;
+        display: block;
+      }
+
+      /*TASK-SPECIFIC STYLES*/
+      /* Task 1 */
+      .box.task1 {
+        padding: 10px;
+      }
+      /* Task 2 */
+      .task2.box {
+        padding: 10px 30px;
+        border: 2px dashed blue;
+      }
+
+      /* Task 3 */
+      .task3.box {
+        margin-top: 20px;
+        border: 2px solid red;
+      }
+
+      /* Task 5 */
+      .task5.box {
+        width: 300px;
+        padding: 20px;
+        border: 5px solid purple;
+        box-sizing: border-box;
+      }
+
+      /* Task 6 */
+      .task6.box {
+        padding: 15px;
+      }
+
+      /* Task 7 */
+      .task7.box {
+        margin-bottom: 15px;
+      }
+
+      /* Task 9 */
+      .task9.box {
+        width: 300px;
+        border: 2px solid green;
+        box-sizing: border-box;
+      }
+
+      /* Task 11 */
+      .task11.box {
+        padding-left: 30px;
+        padding-right: 30px;
+        border: 2px solid orange;
+      }
+
+      /* Task 12 – Product card */
+      .task12.box {
+        width: 220px;
+        padding: 15px;
+        border: 2px solid #777;
+        background: #eee;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>CSS Box Model – Complete Practice Lab</h1>
+    <p style="text-align:center;">
+    Complete all tasks using <strong>padding, border, margin, and box-sizing</strong>.
+    Use DevTools to inspect the box model.
+</p>
+
+
+    <!-- TASK 1 -->
+    <div class="section">
+      <h2>Task 1: Basic Box Model</h2>
+      <div class="box task1">Simple text content</div>
+    </div>
+
+    <!-- TASK 2 -->
+    <div class="section">
+      <h2>Task 2: Different Sides</h2>
+      <div class="box task2">Left & right spacing should be larger</div>
+    </div>
+
+    <!-- TASK 3 -->
+    <div class="section">
+      <h2>Task 3: Vertical Spacing</h2>
+      <div class="box task3">Control vertical spacing</div>
+    </div>
+
+    <!-- TASK 4 -->
+    <div class="section">
+      <h2>Task 4: Image Padding</h2>
+      <div class="box task4">
+        <img
+          src="https://i.pinimg.com/1200x/32/45/79/324579010135f0e14b07847f088146ed.jpg"
+          alt="Sample"
+        />
+        <p>Text should not touch border</p>
+      </div>
+    </div>
+
+    <!-- TASK 5 -->
+    <div class="section">
+      <h2>Task 5: Box Sizing</h2>
+      <div class="box task5">Keep total width 300px</div>
+    </div>
+
+    <!-- TASK 6 -->
+    <div class="section">
+      <h2>Task 6: Image Touching Border</h2>
+      <div class="box task6">
+        <img src="https://i.pinimg.com/1200x/41/02/af/4102af0fc123f0296e94fefa2037a870.jpg" alt="Placeholder" />
+        <p>Spacing fixed using padding</p>
+      </div>
+    </div>
+
+    <!-- TASK 7 -->
+    <div class="section">
+      <h2>Task 7: Separate Cards</h2>
+      <div class="box task7">Card One</div>
+      <div class="box task7">Card Two</div>
+    </div>
+
+    <!-- TASK 8 -->
+    <div class="section">
+      <h2>Task 8: Padding or Margin?</h2>
+      <div class="box task8">Text should not touch border</div>
+    </div>
+
+    <!-- TASK 9 -->
+    <div class="section">
+      <h2>Task 9: Fix Width</h2>
+      <div class="box task9">Width must stay 300px</div>
+    </div>
+
+    <!-- TASK 10 -->
+    <div class="section">
+      <h2>Task 10: Image Card</h2>
+      <div class="box task10">
+        <img src="https://i.pinimg.com/1200x/b1/25/4e/b1254ec655750c3f14008464017b966c.jpg" alt="Card Image" />
+        <h3>Card Title</h3>
+        <p>Spacing must look clean</p>
+      </div>
+    </div>
+
+    <!-- TASK 11 -->
+    <div class="section">
+      <h2>Task 11: Horizontal Padding</h2>
+      <div class="box task11">Left & right spacing only</div>
+    </div>
+
+    <!-- TASK 12 -->
+    <div class="section">
+      <h2>Task 12: Product Card (Final)</h2>
+      <div class="box task12">
+        <img src="https://i.pinimg.com/736x/f2/77/d3/f277d3c6b4161d2d9fbdb8e3cf073961.jpg" alt="Product" />
+        <h3>Product Name</h3>
+        <p>Description goes here</p>
+        <p><strong>$99</strong></p>
+      </div>
+    </div>
+  </body>
+</html>

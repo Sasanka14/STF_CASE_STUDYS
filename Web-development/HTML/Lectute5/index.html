@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location — Warm Minimal</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", system-ui, sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        background: linear-gradient(180deg, #fff6ec, #fdebd3);
+        color: #4b2e1e;
+      }
+      .square-bg {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+
+        background-color: #fff6ec;
+        background-image:
+          linear-gradient(90deg, rgba(231, 111, 81, 0.08) 2px, transparent 1px),
+          linear-gradient(180deg, rgba(231, 111, 81, 0.08) 2px, transparent 1px);
+
+        background-size: 48px 48px;
+        mask-image: radial-gradient(
+          circle at center,
+          rgba(0, 0, 0, 1) 40%,
+          rgba(0, 0, 0, 0.4) 70%,
+          rgba(0, 0, 0, 0.1) 100%
+        );
+      }
+
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      button {
+        padding: 20px 46px;
+        font-size: large;
+        font-weight: 500;
+        background: #f4a261;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition:
+          background 0.3s ease,
+          transform 0.2s ease;
+      }
+
+      button:hover {
+        background: #e76f51;
+        transform: translateY(-2px);
+      }
+      #loc {
+        margin-top: 20px;
+        padding: 16px 22px;
+        background: #ffffffcc;
+        border-radius: 14px;
+        font-size: 1rem;
+        line-height: 1.6;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        opacity: 0;
+        transform: translateY(6px);
+        transition: all 0.35s ease;
+      }
+
+      #loc.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="square-bg"></div>
+
+    <div class="container">
+        <button onclick="getLocation()">Get Location</button>
+        <p id="loc"></p>
+      </div>
+
+    <script>
+      function getLocation() {
+        const loc = document.getElementById("loc");
+
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            loc.innerHTML = `
+            <strong>Your Location</strong><br>
+            Latitude: ${position.coords.latitude.toFixed(4)}<br>
+            Longitude: ${position.coords.longitude.toFixed(4)}
+          `;
+            loc.classList.remove("show");
+            void loc.offsetWidth;
+            loc.classList.add("show");
+          },
+          () => {
+            loc.innerHTML = "Location permission denied.";
+            loc.classList.add("show");
+          },
+        );
+      }
+    </script>
+  </body>
+</html>

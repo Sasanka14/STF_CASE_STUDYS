@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="saveInCache()"> save </button>
+    <button onclick="loadFromCache()">load</button>
+    <script>
+        let url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQykzoZeCE0p7LeuyHnLYCdPP2jju9d5PaMeA&s"
+        // cache box
+        async function saveInCache(){
+           let mybox =  await caches.open('box')
+          mybox.add(url);
+        }
+        async function loadFromCache(){
+            let mybox =  await caches.open('box')
+            let response = await mybox.match(url);
+            console.log(response);
+            let blob = await response.blob();
+            let imgURL = URL.createObjectURL(blob);
+            let img = document.createElement('img');
+            img.src = imgURL;
+            document.body.appendChild(img);
+        }
+    </script>
+</body>
+</html>

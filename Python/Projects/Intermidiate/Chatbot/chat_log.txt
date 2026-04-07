@@ -1,0 +1,24 @@
+[2025-12-02T02:34:14] USER: hi
+[2025-12-02T02:34:14] BOT: Hi! Feel free to ask me anything.
+[2025-12-02T02:34:18] USER: time
+[2025-12-02T02:34:18] BOT: Right now it's 02:34.
+[2025-12-02T02:34:26] USER: i love yoy
+[2025-12-02T02:34:26] BOT: I'm not sure I understand. Could you rephrase?
+[2025-12-02T02:34:32] USER: i love you
+[2025-12-02T02:34:32] BOT: See you soon. Stay focused.
+[2025-12-02T02:35:30] USER: you name
+[2025-12-02T02:35:30] BOT: If I remember correctly, you are my friend.
+[2025-12-02T02:36:11] USER: bot_name
+[2025-12-02T02:36:11] BOT: That one is tricky. Try asking in a different way.
+[2025-12-02T02:36:17] USER: bot
+[2025-12-02T02:36:17] BOT: That one is tricky. Try asking in a different way.
+[2025-12-02T02:36:22] USER: bot name
+[2025-12-02T02:36:22] BOT: You told me your name is my friend.
+[2025-12-02T02:36:48] USER: what is your name ?
+[2025-12-02T02:36:48] BOT: You can call me Jarvis.
+[2025-12-02T02:37:19] USER: my name is sasanka
+[2025-12-02T02:37:19] BOT: Nice to meet you, sasanka!
+[2025-12-02T02:37:33] USER: what is my name
+[2025-12-02T02:37:33] BOT: If I remember correctly, you are sasanka.
+[2025-12-02T02:37:40] USER: good
+[2025-12-02T02:37:40] BOT: Hello! How can I help you today?

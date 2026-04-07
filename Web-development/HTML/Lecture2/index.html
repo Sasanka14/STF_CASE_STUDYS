@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lecture 2 - HTML Overview</title>
+  </head>
+
+  <body>
+    <h1>Lecture 2: HTML Basics</h1>
+
+    <h2>HTML Timeline</h2>
+    <ul>
+      <li>HTML 1.0 (1993) - Basic structure for web documents</li>
+      <li>HTML 2.0 (1995) - Standardized core HTML elements</li>
+      <li>HTML 3.2 (1997) - Added tables, applets, and text flow control</li>
+      <li>
+        HTML 4.01 (1999) - Introduced CSS support and better accessibility
+      </li>
+      <li>HTML5 (2014) - Modern web standard with multimedia and APIs</li>
+    </ul>
+
+    <h2>Key Features of HTML</h2>
+    <ul>
+      <li>Markup language used to structure web pages</li>
+      <li>Uses tags and attributes to define elements</li>
+      <li>Platform-independent and browser-supported</li>
+      <li>Easy to learn and implement</li>
+      <li>Works with CSS and JavaScript for styling and interactivity</li>
+    </ul>
+
+    <h2>HTML vs HTML5</h2>
+    <table border="1">
+      <tr>
+        <th>HTML</th>
+        <th>HTML5</th>
+      </tr>
+      <tr>
+        <td>No built-in multimedia support</td>
+        <td>Supports audio and video tags</td>
+      </tr>
+      <tr>
+        <td>Relies on plugins like Flash</td>
+        <td>No external plugins required</td>
+      </tr>
+      <tr>
+        <td>Limited semantic tags</td>
+        <td>Includes semantic tags like header, footer, section</td>
+      </tr>
+      <tr>
+        <td>No support for modern APIs</td>
+        <td>Supports APIs like Canvas, Geolocation, and Storage</td>
+      </tr>
+      <tr>
+        <td>Less mobile-friendly</td>
+        <td>Designed for mobile and responsive web apps</td>
+      </tr>
+    </table>
+
+    <<h2>HTML5 Boilerplate</h2>
+<pre>
+&lt;!DOCTYPE html&gt; 
+&lt;!-- Declares the document type and tells the browser this is HTML5 --&gt;
+
+&lt;html lang="en"&gt; 
+&lt;!-- Root element of the HTML document, lang defines the language --&gt;
+
+&lt;head&gt; 
+  &lt;!-- Contains metadata and information about the document --&gt;
+
+  &lt;meta charset="UTF-8"&gt; 
+  &lt;!-- Sets character encoding to support all languages and symbols --&gt;
+
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; 
+  &lt;!-- Ensures proper scaling and responsiveness on mobile devices --&gt;
+
+  &lt;title&gt;Document&lt;/title&gt; 
+  &lt;!-- Title shown in the browser tab --&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt; 
+  &lt;!-- Main content of the webpage goes here --&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+
+<h2>HTML Tags Overview</h2>
+
+<h3>Structure Tags (one line each)</h3>
+<ul>
+  <li>&lt;html&gt; - Root element that wraps the entire HTML document</li>
+  <li>&lt;head&gt; - Contains metadata and document information</li>
+  <li>&lt;title&gt; - Sets the browser tab title</li>
+  <li>&lt;body&gt; - Holds all visible page content</li>
+</ul>
+
+<h3>Semantic Tags (one line each)</h3>
+<ul>
+  <li>&lt;header&gt; - Represents the top section of a page or section</li>
+  <li>&lt;nav&gt; - Defines navigation links</li>
+  <li>&lt;main&gt; - Contains the main content of the document</li>
+  <li>&lt;section&gt; - Groups related content together</li>
+  <li>&lt;article&gt; - Represents independent, reusable content</li>
+  <li>&lt;footer&gt; - Represents the bottom section of a page or section</li>
+</ul>
+
+<h3>Difference: Structure Tags vs Semantic Tags</h3>
+<table border="1">
+  <tr>
+    <th>Structure Tags</th>
+    <th>Semantic Tags</th>
+  </tr>
+  <tr>
+    <td>Define the basic skeleton of the document</td>
+    <td>Define the meaning of the content</td>
+  </tr>
+  <tr>
+    <td>Do not describe content purpose</td>
+    <td>Clearly describe content purpose</td>
+  </tr>
+  <tr>
+    <td>Mainly used by browsers</td>
+    <td>Used by browsers, search engines, and screen readers</td>
+  </tr>
+  <tr>
+    <td>Examples: html, head, body</td>
+    <td>Examples: header, section, article</td>
+  </tr>
+</table>
+
+<h2>Structure of HTML5 - Visual Representation</h2>
+<pre>
+&lt;html&gt;
+ ├── &lt;head&gt;
+ │    └── &lt;title&gt;
+ │
+ └── &lt;body&gt;
+      ├── &lt;header&gt;
+      │    └── &lt;nav&gt;
+      ├── &lt;main&gt;
+      │    ├── &lt;section&gt;
+      │    │    └── &lt;article&gt;
+      │    └── &lt;section&gt;
+      └── &lt;footer&gt;
+&lt;/html&gt;
+</pre>
+```
+
+  </body>
+</html>

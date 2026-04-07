@@ -1,0 +1,250 @@
+1
+Data Structures and Algorithms
+Thomas H. Cormen
+0
+-1
+2
+Operating System Concepts
+Abraham Silberschatz
+0
+-1
+3
+Computer Networks
+Andrew S. Tanenbaum
+1
+99
+4
+The C++ Programming Language
+Bjarne Stroustrup
+1
+123
+5
+Database System Concepts
+Korth and Sudarshan
+0
+-1
+6
+Artificial Intelligence Basics
+Stuart Russell
+0
+-1
+7
+Machine Learning Foundations
+Tom Mitchell
+0
+-1
+8
+Digital Logic Design
+Morris Mano
+0
+-1
+9
+Software Engineering Principles
+Ian Sommerville
+0
+-1
+10
+Object Oriented Programming
+Grady Booch
+0
+-1
+11
+Introduction to Python
+Guido van Rossum
+0
+-1
+12
+Web Development with HTML and CSS
+Jon Duckett
+0
+-1
+13
+Java Programming Guide
+Herbert Schildt
+0
+-1
+14
+Discrete Mathematics
+Kenneth Rosen
+0
+-1
+15
+Computer Organization and Architecture
+William Stallings
+0
+-1
+16
+Unix and Shell Programming
+Yashavant Kanetkar
+0
+-1
+17
+Cyber Security Essentials
+William Stallings
+0
+-1
+18
+Cloud Computing Basics
+Rajkumar Buyya
+0
+-1
+19
+Big Data Analytics
+Viktor Mayer-Schonberger
+0
+-1
+20
+Introduction to JavaScript
+Brendan Eich
+0
+-1
+21
+ReactJS Fundamentals
+Jordan Walke
+0
+-1
+22
+NodeJS in Practice
+Ryan Dahl
+0
+-1
+23
+MongoDB Guide
+Dwight Merriman
+1
+12
+24
+Full Stack Web Development
+Brad Traversy
+0
+-1
+25
+Advanced C Programming
+Dennis Ritchie
+0
+-1
+26
+Programming in ANSI C
+B.W. Kernighan
+0
+-1
+27
+Compiler Design
+Aho and Ullman
+0
+-1
+28
+Theory of Computation
+Michael Sipser
+0
+-1
+29
+Numerical Methods
+Steven Chapra
+0
+-1
+30
+Linear Algebra
+Gilbert Strang
+0
+-1
+31
+Probability and Statistics
+Sheldon Ross
+0
+-1
+32
+Data Mining Concepts
+Jiawei Han
+0
+-1
+33
+Deep Learning Introduction
+Ian Goodfellow
+0
+-1
+34
+Computer Graphics
+Donald Hearn
+0
+-1
+35
+Human Computer Interaction
+Alan Dix
+0
+-1
+36
+Mobile App Development
+Charlie Collins
+0
+-1
+37
+Android Programming
+Bill Phillips
+0
+-1
+38
+iOS Development Basics
+AppCoda
+0
+-1
+39
+Blockchain Technology
+Satoshi Nakamoto
+0
+-1
+40
+Internet of Things
+Kevin Ashton
+0
+-1
+41
+Embedded Systems
+Raj Kamal
+0
+-1
+42
+Microprocessors and Microcontrollers
+Ramesh Gaonkar
+0
+-1
+43
+Software Testing Techniques
+Glenford Myers
+0
+-1
+44
+Agile Project Management
+Ken Schwaber
+0
+-1
+45
+DevOps Fundamentals
+Gene Kim
+0
+-1
+46
+AWS Cloud Practitioner
+Amazon
+0
+-1
+47
+System Design Basics
+Alex Xu
+0
+-1
+48
+Competitive Programming Handbook
+Antti Laaksonen
+0
+-1
+49
+Problem Solving with C++
+Walter Savitch
+0
+-1
+50
+Introduction to Algorithms
+Thomas H. Cormen
+1
+1

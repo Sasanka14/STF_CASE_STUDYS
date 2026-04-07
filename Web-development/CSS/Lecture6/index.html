@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Padding, Margin, and Flexbox (Basic to Advanced)</title>
+  </head>
+  <style>
+    .box {
+      width: 200px;
+      padding: 20px;
+      border: 2px solid black;
+      background-color: lightcoral;
+    }
+    .box1 {
+      width: 200px;
+      margin: 20px;
+      border: 2px solid black;
+      background-color: lightcoral;
+    }
+    .box2 {
+      width: 200px;
+      padding: 20px;
+      border: 2px solid black;
+      background-color: rgb(128, 240, 160);
+    }
+    .box3 {
+      width: 200px;
+      margin: 20px;
+      border: 2px solid black;
+      background-color: rgb(128, 240, 160);
+    }
+    .box4 {
+      width: 200px;
+      padding: 10px 50px 30px 70px;
+      margin: 60px 20px;
+      border: 2px solid black;
+      background-color: lightcoral;
+    }
+    .box5 {
+      width: 200px;
+      padding: -10px;
+      margin: -20px;
+      border: 2px solid black;
+      background-color: lightcoral;
+    }
+
+    .collapse1 {
+      margin-bottom: 50px;
+      border: 2px solid black;
+      background: #ddd;
+    }
+    .collapse2 {
+      margin-top: 30px;
+      border: 2px solid black;
+      background: #bbb;
+    }
+    .inline-span {
+      margin: 20px;
+      padding: 20px;
+      border: 2px solid black;
+      background: yellow;
+    }
+    .flex-container {
+      display: flex;
+      border: 2px solid black;
+      padding: 10px;
+      background: #f0f0f0;
+    }
+    .flex-item {
+      border: 1px solid black;
+      padding: 10px;
+      background: white;
+    }
+
+    .card {
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card-btn {
+      margin-top: 10px;
+      padding: 5px 10px;
+    }
+
+    .box-sizing-box {
+      width: 150px;
+      padding: 40px;
+      border: 5px solid black;
+      box-sizing: border-box;
+    }
+  </style>
+  <body>
+    <h1>Padding, Margin, and Flexbox (Basic to Advanced)</h1>
+    <h2>SECTION A: FOUNDATIONS — WHAT SPACE REALLY MEANS</h2>
+    <h3>Task 1: Content vs Padding</h3>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, illo!
+    </div>
+    <p>
+      Q1. Does padding increase the element’s visible size? <br />
+      -> Yes, padding increases the element's visible size by adding space
+      inside the border. <br />
+      Q2. Does padding affect nearby elements? <br />
+      -> No, padding does not affect nearby elements; it only adds space within
+      the element itself.
+    </p>
+
+    <h3>Task 2: Content vs Margin</h3>
+    <div class="box1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, maiores
+      deleniti?
+    </div>
+    Q1. Does margin increase the element size? <br />
+    -> No, margin does not increase the element size; it adds space outside the
+    element's <br />
+    Q2. Does margin belong to the element itself? <br />
+    -> No, margin does not belong to the element itself; it creates space
+    between the element and its surroundings.
+
+    <h3>Task 3: Padding and Background Relationship</h3>
+    <div class="box2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, maiores
+      deleniti?
+    </div>
+    <div class="box3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, maiores
+      deleniti?
+    </div>
+    Q1. Which space is colored? <br />
+    -> The space inside the border, including the padding area, is colored with
+    the background color. <br />
+    Q2. Why is margin not visible? <br />
+    -> Margin is not visible because it is the space outside the element's
+    border and does not have a background color applied to it. Q3. What does
+    this tell you about the box model? <br />
+    -> This illustrates that the box model consists of content, padding, border,
+    and margin, where only the content, padding, and border areas are affected
+    by background colors.
+
+    <h3>Task 4: Side-Specific Spacing</h3>
+    <div class="box4">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, atque.
+      Voluptatibus quos doloribus suscipit laborum placeat tempore
+      necessitatibus consectetur voluptatum!
+    </div>
+    Q1. Identify which value applies to each side. <br />
+    -> (i). Padding: Top - 10px, Right - 50px, Bottom -30px, Left -70px <br />
+    (ii). Margin: Top - 60px, Bottom - 20px <br />
+    Q2. Rewrite the shorthand using individual properties. <br />
+    -> (i). The shorthand are : <br />
+    padding-top: 10px; <br />
+    padding-right: 50px; <br />
+    padding-bottom: 30px; <br />
+    padding-left: 70px; <br />
+    (ii). The shorthand are : <br />
+    margin-top: 60px; <br />
+    margin-bottom: 20px; <br />
+    Q3. Explain when shorthand improves readability and when it reduces clarity
+    <br />
+    -> Shorthand improves readability when it condenses multiple properties into
+    a single line, making the code cleaner and easier to scan. However, it can
+    reduce clarity when specific values for each side are needed, as it may be
+    harder to quickly identify individual settings without expanding the
+    shorthand. <br />
+
+    <h3>Task 5: Invalid and Extreme Values</h3>
+    <br />
+    <div class="box5">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, maiores
+      deleniti?
+    </div>
+    <br />
+    Q1. Observe browser behavior. <br />
+    -> The browser ignores negative padding values as they are invalid, and it
+    may collapse negative margins, causing overlapping of elements. <br />
+    Q2. Explain why padding disallows negative values. <br />
+    -> Padding disallows negative values because padding defines the space
+    inside an element's border, and negative values would contradict the purpose
+    of creating space within the element. Q3. Describe practical use cases for
+    negative margins. -> Negative margins can be used to create overlapping
+    effects between elements, adjust positioning in layouts where elements need
+    to be closer together than the default spacing allows, and to fine-tune the
+    alignment of elements within a design. <br />
+
+    <h3>Task 6: Margin Collapse Investigation</h3>
+    <div class="collapse1">Box 1 (Margin Bottom 50px)</div>
+    <div class="collapse2">Box 2 (Margin Top 30px)</div>
+    Q1. Measure the final space between elements. <br />
+    -> The space becomes 50px instead of 80px due to margin collapse. <br />
+    Q2. Replace margin with padding and repeat. <br />
+    -> The space becomes 80px because padding does not collapse. <br />
+    Q3. Explain margin collapse in your own words. <br />
+    -> Vertical margins merge into one margin, using only the largest value.
+
+    <h3>Task 7: Inline vs Block Elements</h3>
+    Q1. Which properties behave differently? <br />
+    -> Inline elements ignore vertical margins and do not expand width like
+    block elements. <br />
+    Q2. Why does inline padding affect layout but inline margin behaves
+    inconsistently? <br />
+    -> Padding increases visible and clickable area, while margin doesn't
+    reliably push inline neighbors. <br />
+    Q3. Convert span to inline-block and observe changes. <br />
+    -> Inline-block enables full margin and padding behavior like block
+    elements.
+
+    <h3>Task 8: Why Flex Exists</h3>
+    <div class="flex-container">
+        <div class="flex-item">1</div><div class="flex-item">2</div><div class="flex-item">3</div>
+    </div>
+    Q1. List three immediate changes. <br />
+    -> Items align horizontally. Equal heights appear. Overflow becomes
+    predictable. <br />
+    Q2. Explain which layout problems flex solves compared to margins. <br />
+    -> Solves alignment, spacing, equal heights, and responsive distribution.
+
+    <h3>Task 9: Padding Inside Flex Items</h3>
+    Q1. Does padding affect item alignment? <br />
+    -> No, alignment remains stable. <br />
+    Q2. Does padding affect container size? <br />
+    -> Yes, unless box-sizing is used. <br />
+    Q3. How is this useful for UI components? <br />
+    -> Enables consistent internal spacing for cards, buttons, and tiles.
+
+    <h3>Task 10: Margin Inside Flex Items</h3>
+    Q1. Compare spacing with padding. <br />
+    -> Margin creates outer spacing; padding creates internal spacing. <br />
+    Q2. Remove margin and use gap instead. <br />
+    -> Spacing becomes consistent and controlled by the container. <br />
+    Q3. Explain why gap exists. <br />
+    -> Centralizes spacing logic and improves maintainability.
+
+    <h3>Task 11: Main Axis vs Cross Axis</h3>
+    Q1. Identify the main axis in each case. <br />
+    -> Row: horizontal. Column: vertical. <br />
+    Q2. Determine which margin directions become dominant. <br />
+    -> Row: left/right. Column: top/bottom. <br />
+    Q3. Explain how misunderstanding axes causes layout bugs. <br />
+    -> Spacing is applied in the wrong direction, breaking alignment.
+
+    <h3>Task 12: justify-content vs margin</h3>
+    Q1. Measure consistency of spacing. <br />
+    -> Spacing becomes even. <br />
+    Q2. Add margin back. <br />
+    -> Spacing becomes uneven. <br />
+    Q3. Explain why layout control should be handled by container, not children.
+    <br />
+    -> Centralized control prevents conflicts and visual bugs.
+
+    <h3>Task 13: align-items and Padding Interaction</h3>
+    Q1. Does alignment change? <br />
+    -> No. <br />
+    Q2. Why does padding not affect centering? <br />
+    -> Flex aligns the content box, not internal padding. <br />
+    Q3. How does this improve predictable layouts? <br />
+    -> Internal spacing never breaks alignment.
+
+    <h3>Task 14: Auto Margin in Flex</h3>
+    <div class="flex-container">
+        <div class="flex-item">Stay Left</div>
+        <div class="flex-item" style="margin-left: auto;">Pushed Right</div>
+    </div>
+    Q1. Observe item movement. <br />
+    -> The item moves to the far edge. <br />
+    Q2. Explain how auto margins consume free space. <br />
+    -> Auto margins expand to fill leftover space. <br />
+    Q3. Identify real-world UI uses. <br />
+    -> Navigation bars, toolbars, profile menus.
+
+    <h3>Task 15: Button Design</h3>
+    Q1. Which property increases click area? <br />
+    -> Padding. <br />
+    Q2. Which property affects layout spacing? <br />
+    -> Margin. <br />
+    Q3. Why is padding preferred for accessibility? <br />
+    -> Larger hit targets improve usability.
+
+    <h3>Task 16: Card Component Construction</h3>
+    <div class="card">
+        <div style="height:100px; background: #ccc;">Image</div>
+        <div class="card-content">
+            <b>Title</b><br>
+            Text goes here. <br>
+            <button class="card-btn">Action</button>
+        </div>
+    </div>
+    Q1. Explain each spacing choice. <br />
+    -> Padding for internal content spacing. Margin or gap for external
+    separation.
+
+    <h3>Task 17: Box Size Illusion</h3>
+    Q1. Which appears larger? <br />
+    -> Box with padding. <br />
+    Q2. Which actually occupies more layout space? <br />
+    -> Box with margin. <br />
+    Q3. Why do designers confuse these? <br />
+    -> Visual size differs from layout footprint.
+
+    <h3>Task 18: Broken Layout Diagnosis</h3>
+    <div class="box-sizing-box">Box Sizing: Border Box</div>
+    Q1. Identify why overflow occurs. <br />
+    -> Padding increases width beyond container. <br />
+    Q2. Fix without removing padding. <br />
+    -> Use box-sizing: border-box. <br />
+    Q3. Explain the box-sizing solution. <br />
+    -> Includes padding inside defined width.
+
+    <h3>Task 19: When Margin Fails</h3>
+    Q1. Observe failure. <br />
+    -> Vertical centering fails. <br />
+    Q2. Solve using flexbox. <br />
+    -> Use display: flex; align-items: center; justify-content: center; <br />
+    Q3. Explain why margin is unreliable for alignment. <br />
+    -> Margins are static spacers, not alignment tools.
+
+    <h3>Task 20: Rule Formation (Critical Thinking)</h3>
+    Q1. When should padding never be used? <br />
+    -> For spacing between components. <br />
+    Q2. When should margin never be used? <br />
+    -> For internal content spacing. <br />
+    Q3. When should flexbox replace both? <br />
+    -> For layout alignment and distribution. <br />
+    Q4. How does this improve maintainability? <br />
+    -> Enforces clean separation of concerns and predictable layouts.
+  </body>
+</html>

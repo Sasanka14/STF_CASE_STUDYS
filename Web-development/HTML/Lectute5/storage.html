@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="n">
+    <button onclick="save()">Save Name</button>
+    <script>
+        function save() {
+            localStorage.setItem("user", n.value);
+        }
+    </script>
+</body>
+</html>

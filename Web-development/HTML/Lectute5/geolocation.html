@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation --- HTML API</title>
+</head>
+<body>
+    <button onclick="getLocation()">Get Location</button>
+    <p id="loc"></p>
+
+    <script>
+      function getLocation() {
+        navigator.geolocation.getCurrentPosition(function (position) {
+          document.getElementById("loc").innerHTML =
+            "Latitude: " +
+            position.coords.latitude +
+            "<br>Longitude: " +
+            position.coords.longitude;
+        });
+      }
+    </script>
+</body>
+</html>

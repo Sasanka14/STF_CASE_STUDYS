@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Elements</title>
+</head>
+<style>
+    .fname{
+        color: burlywood;
+        display: inline;
+    }
+</style>
+<body>
+    <div id="box" class="section">
+        hello <span>World</span>
+    </div>
+</body>
+<script>
+    // Replace span
+    const span = document.querySelector('span');
+    // span.textContent = 'JavaScript';
+    // span.replaceWith('earth')
+    const parentNode = document.querySelector('#box');
+     let newChild = document.createElement('p');
+    //  newChild.style.color = 'red';
+     // newChild.style.display = 'inline';
+     newChild.classList.add('fname');
+
+    newChild.textContent = 'JavaScript';
+   //  newChild = document.createTextNode('JavaScript');
+    parentNode.replaceChild(newChild,span)
+    // Remove span
+    // span.remove();
+    // removeChild
+    // parentNode.removeChild(span);
+    // console.log(parentNode.innerHTML);
+    // console.log(parentNode.innerText);
+    // console.log(parentNode.textContent);
+</script>
+</html>

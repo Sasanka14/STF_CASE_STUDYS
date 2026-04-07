@@ -1,0 +1,78 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "good morning", "good evening"],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hey there, what would you like to talk about?",
+        "Hi! Feel free to ask me anything."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you", "take care"],
+      "responses": [
+        "Goodbye! It was nice talking to you.",
+        "See you soon. Stay focused.",
+        "Take care. Come back any time."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "appreciate it"],
+      "responses": [
+        "You're welcome!",
+        "Anytime!",
+        "Happy to help."
+      ]
+    },
+    {
+      "tag": "name_query",
+      "patterns": ["what is my name", "do you remember my name"],
+      "responses": [
+        "You told me your name is {name}.",
+        "If I remember correctly, you are {name}."
+      ]
+    },
+    {
+      "tag": "bot_name",
+      "patterns": ["what is your name", "who are you"],
+      "responses": [
+        "I'm your Python assistant chatbot.",
+        "You can call me Jarvis."
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": ["what time is it", "current time", "tell me the time"],
+      "responses": [
+        "Right now it's {time}."
+      ]
+    },
+    {
+      "tag": "date",
+      "patterns": ["what is the date", "today's date", "which day is today"],
+      "responses": [
+        "Today is {date}."
+      ]
+    },
+    {
+      "tag": "study",
+      "patterns": ["how to study", "give me study tips", "help me focus"],
+      "responses": [
+        "Try the 50–10 rule: 50 minutes deep work, 10 minutes break.",
+        "Plan your day the night before, and attack the hardest task first."
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "I'm not sure I understand. Could you rephrase?",
+        "That one is tricky. Try asking in a different way.",
+        "I don't know yet, but I'm learning every day."
+      ]
+    }
+  ]
+}

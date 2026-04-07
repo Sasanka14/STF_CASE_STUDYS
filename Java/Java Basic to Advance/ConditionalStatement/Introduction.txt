@@ -1,0 +1,19 @@
+The folder "Conditional Statement" contains code examples and resources dedicated to understanding and implementing various 
+conditional statements in programming, particularly in the context of Java. Here, you can find explanations, examples, and exercises 
+that cover topics such as:
+
+1. **If Statements**: Exploring basic conditional statements used to execute code blocks based on certain conditions.
+
+2. **If-Else Statements**: Understanding how to provide alternative execution paths when conditions are not met.
+
+3. **If-Elseif Statements**: Learning to handle multiple conditions using else-if statements.
+
+4. **Switch-Case Statements**: Exploring the switch-case statement for multi-way branching based on the value of an expression.
+
+5. **Ternary Operator**: Understanding the ternary operator as a shorthand for simple if-else statements.
+
+Through the contents of this folder, learners can grasp the fundamentals of conditional statements, which are essential for 
+controlling the flow of execution in programs and making decisions based on specific conditions. Later, these concepts can be 
+applied to solve more complex problems and build robust applications.
+
+Later, I will upload my handwritten notes to my website.

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lecture 1 - Introduction to JavaScript</title>
+</head>
+<body>
+
+  <h1>Lecture 1: Introduction to JavaScript</h1>
+
+  <h2>What is JavaScript?</h2>
+  <p>
+    JavaScript is a scripting language used to make web pages interactive by
+    handling logic, events, and dynamic content in the browser.
+  </p>
+
+  <h2>Why JavaScript is Used</h2>
+  <ul>
+    <li>Adds interactivity - responds to user actions</li>
+    <li>Makes pages dynamic - content can change without reload</li>
+    <li>Handles logic - conditions, loops, calculations</li>
+    <li>Works with HTML & CSS - completes the web stack</li>
+    <li>Runs in browser - no compilation required</li>
+  </ul>
+
+  <h2>History of JavaScript</h2>
+  <ul>
+    <li>Invented by Brendan Eich in 1995 - for dynamic web pages</li>
+    <li>Developed at Netscape in just 10 days</li>
+    <li>Initially called Mocha, then LiveScript</li>
+    <li>Renamed JavaScript for marketing reasons</li>
+  </ul>
+
+  <h2>What JavaScript Can Do</h2>
+  <ul>
+    <li>Manipulate HTML and CSS dynamically</li>
+    <li>Validate forms on the client side</li>
+    <li>Handle user events like clicks and keyboard input</li>
+    <li>Fetch data from servers using APIs</li>
+    <li>Create animations and effects</li>
+  </ul>
+
+  <h2>What JavaScript Cannot Do</h2>
+  <ul>
+    <li>Directly access user files for security reasons</li>
+    <li>Access databases without a backend</li>
+    <li>Perform system-level operations</li>
+  </ul>
+
+  <h2>Types of JavaScript Usage</h2>
+  <ul>
+    <li>Inline JavaScript - written directly in HTML elements</li>
+    <li>Internal JavaScript - written inside &lt;script&gt; tag</li>
+    <li>External JavaScript - written in a separate .js file</li>
+  </ul>
+
+  <h2>JavaScript Syntax (Basic)</h2>
+  <pre>
+let message = "Hello World";
+console.log(message);
+  </pre>
+
+  <h2>Advantages of JavaScript</h2>
+  <ul>
+    <li>Runs fast - executed directly in browser</li>
+    <li>Easy to learn - simple syntax</li>
+    <li>Reduces server load - client-side execution</li>
+    <li>Large ecosystem - frameworks and libraries</li>
+  </ul>
+
+  <h2>Disadvantages of JavaScript</h2>
+  <ul>
+    <li>Browser differences may cause issues</li>
+    <li>Security risks if misused</li>
+    <li>Can be disabled by users</li>
+  </ul>
+
+  <h2>JavaScript vs Java</h2>
+  <table border="1">
+    <tr>
+      <th>JavaScript</th>
+      <th>Java</th>
+    </tr>
+    <tr>
+      <td>Scripting language</td>
+      <td>Programming language</td>
+    </tr>
+    <tr>
+      <td>Runs in browser</td>
+      <td>Runs on JVM</td>
+    </tr>
+    <tr>
+      <td>Dynamically typed</td>
+      <td>Statically typed</td>
+    </tr>
+    <tr>
+      <td>Mainly for web</td>
+      <td>Used for enterprise applications</td>
+    </tr>
+  </table>
+
+  <h2>Additional Important Points</h2>
+  <ul>
+    <li>JavaScript is not Java - they are different languages</li>
+    <li>JavaScript is single-threaded - uses event loop</li>
+    <li>JavaScript is case-sensitive - variables must match case</li>
+    <li>JavaScript is essential for modern web apps</li>
+  </ul>
+
+</body>
+</html>

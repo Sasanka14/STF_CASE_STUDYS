@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engage your senses while learning CSS Grid!</title>
+    <style>
+        /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    color: #fff;
+    background: url('https://i.pinimg.com/474x/82/6b/54/826b5474ac2b1d0796926894c2927489.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+aside {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); /* Bigger cards */
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+}
+
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;              
+    overflow: hidden;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    position: relative;
+    padding-top: 10px;
+}
+
+
+.card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255, 0, 150, 0.3), rgba(0, 200, 255, 0.3));
+    opacity: 0.4;
+    transition: opacity 0.2s;
+}
+
+.card:hover::after {
+    opacity: 0.7;
+}
+
+
+.card img {
+    width: 75%;
+    margin: 15px auto 0 auto;   
+    display: block;
+    border-radius: 50%;        
+    background: white;
+    padding: 10px;
+}
+
+
+.card p {
+    padding: 14px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.4);
+    margin-top: 20px;
+    backdrop-filter: blur(5px);
+}
+
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 0, 150, 0.2), rgba(0, 200, 255, 0.2));
+    z-index: 1;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+    <h1>Interactive Tech Skills Gallery</h1>
+    <p>Engage your senses while learning CSS Grid!</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Frontend</a>
+    <a href="#">Backend</a>
+    <a href="#">Design</a>
+    <a href="#">Data</a>
+</nav>
+
+<main>
+    <!-- Sidebar -->
+    <aside>
+        <h2>Filters</h2>
+        <ul style="list-style:none; margin-top:10px; line-height:1.8;">
+            <li>⬜ Frontend</li>
+            <li>⬜ Backend</li>
+            <li>⬜ Design</li>
+            <li>⬜ Data</li>
+        </ul>
+
+        <h3 style="margin-top:15px;">Why this is perfect for Grid class:</h3>
+        <ul style="margin-left:20px; margin-top:10px; line-height:1.6;">
+            <li>Main is a 2-column grid (sidebar + gallery).</li>
+            <li>Gallery is a responsive scrollable grid of cards.</li>
+            <li>Hover effects & animated gradients make UI interactive.</li>
+            <li>Students can change skills & practice grid-template-columns, gaps, and alignment.</li>
+        </ul>
+    </aside>
+
+    <!-- Gallery -->
+    <section class="gallery">
+
+        <!-- Row 1 -->
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML">
+            <p>HTML Basics</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS">
+            <p>CSS Styling</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript">
+            <p>JavaScript Logic</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919852.png" alt="Python">
+            <p>Python Programming</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java">
+            <p>Java Development</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="NodeJS">
+            <p>Node.js Backend</p>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2772/2772128.png" alt="React">
+            <p>React Interfaces</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2488/2488703.png" alt="SQL">
+            <p>SQL Databases</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/906/906324.png" alt="UI UX">
+            <p>UI/UX Design</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML">
+            <p>Advanced HTML</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS">
+            <p>Modern CSS</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript">
+            <p>ES6 JavaScript</p>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919852.png" alt="Python">
+            <p>Data with Python</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java">
+            <p>Spring Boot</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="NodeJS">
+            <p>API Development</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2772/2772128.png" alt="React">
+            <p>React Hooks</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2488/2488703.png" alt="SQL">
+            <p>Query Optimization</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/906/906324.png" alt="UI UX">
+            <p>Design Systems</p>
+        </div>
+
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Interactive Tech Skills Gallery | Designed for UI Practice</p>
+</footer>
+
+</body>
+
+</html>

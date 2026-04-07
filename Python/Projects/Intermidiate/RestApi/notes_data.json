@@ -1,0 +1,26 @@
+{
+  "next_id": 5,
+  "notes": [
+    {
+      "id": 2,
+      "title": "How to use this API",
+      "content": "Use POST /notes to create, GET /notes to read, PUT to update, and DELETE to remove notes.",
+      "created_at": 0,
+      "updated_at": 0
+    },
+    {
+      "id": 3,
+      "title": "Persistence Enabled",
+      "content": "Notes are stored in a local JSON file. Restarting the server will not erase them.",
+      "created_at": 0,
+      "updated_at": 0
+    },
+    {
+      "id": 4,
+      "title": "Postman Test Note",
+      "content": "This note was created from Postman using POST /notes.",
+      "created_at": 1764646815.514766,
+      "updated_at": 1764646815.514766
+    }
+  ]
+}

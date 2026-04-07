@@ -1,0 +1,5 @@
+In Object-Oriented Programming (OOP), code duplication often occurs when similar logic is implemented in multiple classes. This violates the principle of code reusability.
+Consider a Student Management System where we need to calculate the total marks of students : 
+1. Write a program (before refactoring) that demonstrates duplicate logic in two different student classes.
+2. Then, refactor the program using Inheritance to remove duplication and improve reusability.
+3. Show the output of both programs and explain the advantages of the refactored version.
