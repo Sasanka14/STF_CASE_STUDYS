@@ -1,0 +1,1 @@
+Write a C program to implement a UDP server that binds to port 5000, receives a message from a client, displays the message on the server console, and then closes the connection. Explain the role of each system call used in your code (such as socket(), bind(), recvfrom(), and close()).

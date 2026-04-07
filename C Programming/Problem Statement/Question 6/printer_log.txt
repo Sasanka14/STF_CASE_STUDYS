@@ -1,0 +1,27 @@
+User 1 submitted Job 101
+User 2 submitted Job 201
+User 3 submitted Job 301
+Printer started job 101 from User 1
+Printer completed job 101 from User 1
+Printer started job 201 from User 2
+User 1 submitted Job 102
+User 2 submitted Job 202
+User 3 submitted Job 302
+Printer completed job 201 from User 2
+Printer started job 301 from User 3
+User 3 submitted Job 303
+User 1 submitted Job 103
+Printer completed job 301 from User 3
+Printer started job 102 from User 1
+User 2 submitted Job 203
+Printer completed job 102 from User 1
+Printer started job 202 from User 2
+Printer completed job 202 from User 2
+Printer started job 302 from User 3
+Printer completed job 302 from User 3
+Printer started job 303 from User 3
+Printer completed job 303 from User 3
+Printer started job 103 from User 1
+Printer completed job 103 from User 1
+Printer started job 203 from User 2
+Printer completed job 203 from User 2
